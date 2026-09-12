@@ -1,0 +1,1 @@
+import{Z as r,a6 as i}from"./index-JSg-aIF2.js";function s(){return r({queryKey:["audience-insights"],queryFn:async()=>{const e=await i("instagram-api",{action:"get-audience-insights"});if(e.error)throw new Error(e.error);return{cities:e.cities||[],countries:e.countries||[],ages:e.ages||[],genders:e.genders||[]}},staleTime:10*60*1e3,refetchOnWindowFocus:!1})}export{s as u};
